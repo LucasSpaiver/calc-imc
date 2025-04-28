@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & .user-input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        & label {
+            color: #505050;
+        }
+
+        & input {
+            padding: 13px 25px;
+            border-radius: 6px;
+            outline: none;
+            border: 1px solid #e85b81;
+            width: 100%;
+        }
+    }
+
+    & #btnCalcular {
+        background-color: #e85b81;
+        border-radius: 5px;
+        padding: 13px;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    & #btnCalcular:hover {
+        background-color: #d33d65;
+    }
+}
+
+.res {
+
+    color: #ababab;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+
+    & p {
+        width: 254px;
+        margin: auto;
+    }
+
+    .cima {
+        display: flex;
+    }
+
+    .baixo {
+        display: flex;
+    }
+
+    & div:first-child {
+        color: #505050;
+        font-weight: 700;
+        border-bottom: #E85B81 1px solid;
+        padding-bottom: 10px;
+    }
+
+    & div:last-child {
+        color: #505050;
+        padding-top: 10px;
+    }
+}
+
+.tabela {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #f4f4f4;
+
+    & .imc {
+        width: 510px;
+    }
+
+    & .classificacao {
+        width: 510px;
+    }
+
+    & p {
+        width: 100%;
+        padding: 12px;
+        color: #505050;
+    }
+
+    & h1 {
+        width: 100%;
+        padding: 12px;
+    }
+
+    & p:nth-child(odd) {
+        background-color: #f4f4f4;
+    }
+
+    & .imc h1 {
+        font-size: 25px;
+        background-color: #f4f4f4;
+        color: #E85B81;
+    }
+
+    & .classificacao h1 {
+        font-size: 25px;
+        background-color: #f4f4f4;
+        color: #E85B81;
+    }
+}
