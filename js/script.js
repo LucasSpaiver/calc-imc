@@ -13,6 +13,12 @@ function calcular(event) {
     var alturaValue = altura.value
     var imc = (pesoValue / Math.pow(alturaValue,2) ).toFixed(2)
 
+    if(pesoValue == 0 || alturaValue == 0) {
+       
+        res.innerHTML = "ERRO"
+        return
+    }
+
     if (imc < 17){
         res.innerHTML = `
         <div class="cima">
@@ -115,7 +121,7 @@ function calcular(event) {
 
     peso.value = ""
     altura.value = ""
-    btnCalcular.innerHTML = "Refazer"
+    btnCalcular.value = "Refazer"
     console.log(imc)
 }
 

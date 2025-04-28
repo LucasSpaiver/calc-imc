@@ -131,3 +131,27 @@ form {
         color: #E85B81;
     }
 }
+
+@media screen and (max-width: 550px) {
+    html {
+        font-size: 80%;
+    }
+
+    main,
+    .tabela {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    html {
+        font-size: 45%;
+    }
+}
